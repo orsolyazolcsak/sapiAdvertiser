@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.sapi.advertiser.Activities.AdvertismentDetailActivity">
+    <com.glide.slider.library.SliderLayout
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        />
+<!--
+    <ImageView
+        android:id="@+id/ad_detail_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/add_btn" />
+    -->
+    <TextView
+        android:id="@+id/ad_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:layout_below="@+id/imageSlider"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+    <TextView
+        android:id="@+id/ad_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ad_detail_title"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+    <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_below="@+id/ad_detail_description"
+        android:layout_marginTop="25dp"
+        map:mapType="normal"
+        map:uiCompass="false"
+        map:uiScrollGestures="true"
+        map:uiTiltGestures="true"
+        map:uiZoomControls="true"
+        map:uiZoomGestures="true" />
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/map">
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Call creator"
+            android:layout_marginStart="54dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/ad_detail_user_name" />
+
+        <ImageView
+        android:id="@+id/ad_detail_user_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:src="@drawable/usericon"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/ad_detail_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="8dp"
+
+        android:letterSpacing="0.02"
+        android:text="user name"
+        android:textColor="@color/pf_grey_light"
+        android:textSize="14.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/ad_detail_user_image" />
+</RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>

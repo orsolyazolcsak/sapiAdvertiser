@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.sapi.advertiser.Activities.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/user_profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_portrait"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/user_profile_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:hint="@string/first_name_hint"
+        android:ems="10" />
+    <TextView
+        android:id="@+id/user_profile_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_profile_firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:hint="@string/last_name_hint"
+        android:ems="10" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        android:layout_below="@+id/user_profile_lastname"/>
+
+</RelativeLayout>

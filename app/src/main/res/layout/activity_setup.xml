@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/setupImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:scaleType="centerCrop"
+            android:background="#006efe"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="1dp">
+
+            <ImageView
+                android:id="@+id/setupImageViewBig"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:onClick="ImageClickHandler"
+                android:src="@drawable/usericon"
+                android:layout_marginTop="31dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="right"
+                android:onClick="ImageClickHandler"
+                android:src="@drawable/camera" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imageView"
+
+                android:letterSpacing="0.02"
+                android:onClick="ImageClickHandler"
+                android:text="Upload Cover Picture"
+                android:textColor="#fff"
+                android:textSize="14.5dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/setupFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="First Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:padding="16dp"
+                        android:textColorHint="#73787b"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/setupLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/border"
+                        android:hint="Last Name"
+                        android:inputType="text"
+                        android:letterSpacing="0.02"
+                        android:maxLines="1"
+                        android:padding="16dp"
+                        android:textColorHint="#73787b"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <com.lamudi.phonefield.PhoneEditText
+                    android:id="@+id/setupPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/setupFinishButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/gradiant"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:padding="18dp"
+                android:text="GET STARTED"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
+

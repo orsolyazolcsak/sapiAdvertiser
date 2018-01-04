@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">SapiAdvertiser</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="facebook_app_id">1972000676346491</string>
+    <string name="fb_login_protocol_scheme">fb1972000676346491</string>
+    <string name="google_android_map_api_key">AIzaSyDqPBV86HospJEFjTvNmOarXKKL-n8kd3o</string>
+
+    <string name="titleHint">Title...</string>
+    <string name="descriptionHint">Description...</string>
+    <string name="submitAd">Submit Ad</string>
+    <string name="location">Location</string>
+
+    <string name="registerNow">Register Now</string>
+    <string name="logIn">Log In</string>
+
+    <string name="emailHint">Email..</string>
+    <string name="passwordHint">Password...</string>
+
+    <string name="signUp">Sign Up</string>
+
+    <string name="finishSetup">Finish Setup</string>
+    <string name="addImage">Add images</string>
+    <string name="addAdvertisment">Add Advertisment</string>
+    <string name="settings">Settings</string>
+    <string name="logOut">Log Out</string>
+
+    <string name="phone_hint">Phone number</string>
+    <string name="first_name_hint">First name</string>
+    <string name="last_name_hint">Last name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.activities.TransactionSearchActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_add"
+        android:icon="@mipmap/ic_add_white_24dp"
+        android:title="@string/addAdvertisment"
+        app:showAsAction="always"
+        android:visible="false"/>
+    <item android:id="@+id/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item android:id="@+id/action_logout"
+        android:title="@string/logOut"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item android:id="@+id/action_login"
+        android:title="Log In"
+        app:showAsAction="never"/>
+</menu>
